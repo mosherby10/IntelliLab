@@ -2,12 +2,16 @@ services:
   backend:
     build: ./backend
     container_name: backend_container
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
     volumes:
       - ./backend:/app
     depends_on:
       - db
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/mydb
+    restart: always
 
   db:
     image: postgres:15
@@ -20,6 +24,7 @@ services:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+    restart: always
 
 volumes:
   db_data:
