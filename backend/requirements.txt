@@ -9,4 +9,6 @@ pydantic
 joblib
 scikit-learn
 transformers
+email-validator
+python-multipart
 

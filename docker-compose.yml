@@ -10,7 +10,7 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=postgresql://user:password@db:5432/mydb
+      - DATABASE_URL=postgresql://user:password@postgres_container:5432/mydb
     restart: always
 
   db:
