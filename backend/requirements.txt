@@ -11,4 +11,6 @@ scikit-learn
 transformers
 email-validator
 python-multipart
+torch
+transformers
 
