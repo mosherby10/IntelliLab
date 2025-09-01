@@ -8,7 +8,6 @@ python-jose[cryptography]
 pydantic
 joblib
 scikit-learn
-transformers
 email-validator
 python-multipart
 torch
