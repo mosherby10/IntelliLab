@@ -12,4 +12,6 @@ email-validator
 python-multipart
 torch
 transformers
-
+sentence-transformers
+numpy
+pandas

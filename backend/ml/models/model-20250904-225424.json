@@ -1,0 +1,18 @@
+{
+  "model_type": "LogisticRegression",
+  "feature_names": [
+    "last_quiz_score",
+    "avg_submission_score",
+    "submissions_count",
+    "inactive_days",
+    "avg_session_minutes",
+    "quiz_trend",
+    "submission_success_rate",
+    "score_variance"
+  ],
+  "trained_at": "2025-09-04T22:54:24.345570",
+  "metrics": {
+    "accuracy": 0.0,
+    "f1": 0.0
+  }
+}
